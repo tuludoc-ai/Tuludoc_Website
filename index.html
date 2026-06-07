@@ -1,63 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tuludoc Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<nav>
-    <div class="logo">Asha Site</div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
 <section id="home" class="hero">
-    <h1>Welcome to tuludoc Website</h1>
-    <p>Hate Speech recognition website.</p>
+    <h1>Welcome to TuluDoc</h1>
+    <p>Shared Task on Original Research Title Reconstruction and Retrieval from LLM-Generated Reformulations</p>
+
+    <div class="overview">
+        <h2>Task Overview</h2>
+        <p>
+            Large Language Models (LLMs) are increasingly used to rewrite and
+            rephrase scientific content for different audiences and communication
+            purposes. While these reformulations improve accessibility and
+            engagement, they also create challenges for content attribution,
+            provenance tracking, and source recovery. This shared task focuses on
+            reconstructing and retrieving original research paper titles from
+            LLM-generated reformulations. The dataset consists of original research
+            paper titles and their corresponding rewritten variants generated under
+            three controlled stylistic cues: <strong>Technical</strong>,
+            <strong>Accessible</strong>, and <strong>Catchy</strong>. For each
+            original title, ten reformulations are generated for each style,
+            resulting in thirty variants that preserve the core research idea while
+            modifying the presentation style.
+        </p>
+
+        <h2>Subtasks</h2>
+
+        <h3>Subtask 1: Original Title Reconstruction</h3>
+        <p>
+            Participants are provided with a reformulated title and its style cue
+            (Technical, Accessible, or Catchy). The goal is to reconstruct the most
+            probable original research title. This task evaluates a system's ability
+            to recover source content despite stylistic transformations introduced
+            by LLMs.
+        </p>
+
+        <h3>Subtask 2: Original Title Retrieval and Ranking</h3>
+        <p>
+            Participants must produce a ranked list of up to ten candidate original
+            titles ordered by their likelihood of being the true source title. This
+            ranking-based task evaluates semantic matching and source-title
+            identification across diverse stylistic rewrites.
+        </p>
+
+        <h2>Why This Task Matters</h2>
+        <p>
+            The task has applications in scientific information retrieval, content
+            provenance, academic search systems, duplicate detection, citation
+            linking, and AI-generated text analysis. It contributes to understanding
+            how much source information remains recoverable after controlled
+            LLM-based rewriting and provides insights into the traceability and
+            attribution of AI-generated scientific content.
+        </p>
+    </div>
+
     <a href="#contact" class="btn">Contact Us</a>
 </section>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>Hate Speeches are recognisied and named here.</p>
-</section>
-
-<section id="services">
-    <h2>Services</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Service 1</h3>
-            <p>Description here.</p>
-        </div>
-
-        <div class="card">
-            <h3>Service 2</h3>
-            <p>Description here.</p>
-        </div>
-
-        <div class="card">
-            <h3>Service 3</h3>
-            <p>Description here.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: tuludoc@gmail.com</p>
-</section>
-
-<footer>
-    <p>© 2026 My Website. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
