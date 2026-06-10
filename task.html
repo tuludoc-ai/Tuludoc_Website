@@ -24,30 +24,34 @@
 <section class="content">
 
     <h1>Task Description</h1>
+    <p>
+    The shared task is divided into two complementary subtasks.
+</p>
 
     <h2>Subtask 1: Original Title Reconstruction</h2>
 
     <p>
         Participants are given a reformulated title together
         with its stylistic cue (Technical, Accessible, or Catchy).
-        The goal is to reconstruct the original research title.
+        The goal is to reconstruct the original research title. This subtask evaluates a system's ability to recover the underlying source content 
+        despite stylistic transformations introduced by LLMs.
     </p>
 
     <h2>Subtask 2: Original Title Retrieval and Ranking</h2>
 
+    
     <p>
         Participants must generate a ranked list of up to
         ten candidate titles ordered by their likelihood
         of being the true source title.
     </p>
 
-    <h2>Objective</h2>
+    <h2>Evaluation </h2>
 
     <p>
-        The task evaluates how effectively systems can recover
-        source information from stylistically transformed
-        LLM-generated titles.
+        Subtask 1 is evaluated using Mean F1 and BERTScore
     </p>
+    <p>Subtask 2 is evaluated using MRR@10 </p>
 
 </section>
 
